@@ -10,11 +10,20 @@ $(document).ready(function() {
     let year = parseInt($('#year').val());
     let month = parseInt($('#month').val());
     let day = parseInt($('#day').val());
-    console.log(year+"---"+month+day);
+    
 
     let daydate =new  DayCalculator (year,month,day);
-    let result = daydate.DayChecker();
-    $('#result').text(result);
+    let maxday =   daydate.GetMaxDay();
+   
+    if(day>maxday || maxday===0){
+     alert("the input is wrong");
+    }
+    
+    
+    let dayoutput = daydate.DayChecker();
+    $('#result').text("This MAX DAY is "+maxday
+                      +" This day is :"+dayoutput);
+   
     
     });
   });
