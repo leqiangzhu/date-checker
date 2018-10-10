@@ -57,7 +57,7 @@ export class DayCalculator {
 
         
     DayChecker(){
-        var days =  [  "Thursday", "Friday", "Saturday","Sunday" ,"Monday", "Tuesday", "Wednesday"];
+        var days =  ["Sunday" ,"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         var date =new Date (Date.UTC(this.year,this.month,this.day));
         var dayGetByCode =days[date.getDay()];
         return dayGetByCode;
