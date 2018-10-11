@@ -21,8 +21,7 @@ $(document).ready(function() {
     
     
     let dayoutput = daydate.DayChecker();
-    $('#result').text("This MAX DAY is "+maxday
-                      +" This day is :"+dayoutput);
+    $('#result').text("This MAX DAY is " +maxday +" This day is :" +dayoutput);
    
     
     });

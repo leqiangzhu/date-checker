@@ -53,14 +53,15 @@ export class DayCalculator {
     }
         return maxDay;
         }
-
+//2---out 3
+// INPU2-1     2
 
         
-    DayChecker(){
-        var days =  ["Sunday" ,"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var date =new Date (Date.UTC(this.year,this.month,this.day));
-        var dayGetByCode =days[date.getDay()];
-        return dayGetByCode;
+        DayChecker(){
+            var days =  [ "Sunday" ,"Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
+            var date =new Date (this.year,this.month-1,this.day);
+            var dayGetByCode =days[date.getDay()];
+            return dayGetByCode;
     
     }
 
